@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"san-serif";
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    height:100vh;
+    width:100%;
+    background-color: black;
+    color:azure;
+
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 20px;
+}
+.logo{
+    margin:10px;
+    color:chocolate;
+    font-size:30px;
+}
+.header nav{
+    margin:20px;
+}
+.header nav a{
+    font-size: 20px;
+    padding:20px;
+    margin-top: 20px;
+    color:azure;
+}
+.header nav a:hover{
+    color:red;
+    text-decoration: underline;
+}
+.content .image img{
+    width:32vw;
+    border-radius: 50%;
+    padding-left:10px;
+    transition:0.2s linear;
+    box-shadow: 0 0 25px solid;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    padding:10px;
+    align-items: center;
+}
+.content .describtion{
+    width:40%;
+    margin:20px;
+    padding-left: 30px;
+
+}
+.content .describtion h1{
+    font-size: 50px;
+    padding:10px 0 ;
+}
+.content .describtion h2{
+    font-size: 50px;
+    padding:10px 0 ;
+}
+.content .describtion span{
+    color: chocolate;
+}
+.content .describtion a i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    font-size: 15px;
+    padding: 10px;
+    color: chocolate;
+    border-color: chocolate;
+    background-color: transparent;
+    border:2px solid chocolate; 
+    border-radius:50%;
+    margin: 20px 20px; 
+    transition: 0.4s ease;
+
+}
+.content .describtion a i:hover{
+    background-color: chocolate;
+    color: white;
+    box-shadow:0 0 25px chocolate;
+    transform: scale(1.3);
+}
+.content .describtion .btn{
+    margin-top: 15px;
+}
+.content .describtion .btn a{
+    color: chocolate;
+    border:2px solid chocolate;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.4s ease;
+    margin: 20px;
+}
+.content .describtion .btn a:hover{
+    background-color: chocolate;
+    color: white;
+    box-shadow:0 0 25px chocolate;
+    transform: scale(1.3);
+}
+@media(max-width:912px){
+    body{
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        padding:7px;
+    }
+    .header .logo{
+        color:chocolate;
+        font-size:30px;
+    }
+    .content{
+        flex-direction: column;
+        padding:10px 0;
+        align-items: center;
+        margin-left:250px;
+        width:50%;
+    }
+    .content .image img{
+        align-items: center;
+        width:80%;
+        height:80%;
+    }
+    .content .describtion{
+        width:100%;
+        text-align: center;
+        margin-right: 70px;
+    }
+    .content .describtion a{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}    
+@media(max-width:360px){
+    body{
+        max-width: 360px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header .logo{
+        align-items: center;
+        font-size:70px;
+        margin-left: 100px;
+    }
+    .header nav{
+        display: flex;
+
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .header nav a{
+        font-size:20px;
+    }
+    .content{
+        flex-direction: column;
+        padding:10px 11px;
+        align-items: center;
+        margin-left:20px;
+        width:100%;
+    }
+    .content .image img{
+        width:400px;
+        height:400px;
+    }
+    .content .describtion a{
+        padding:10px;
+
+    }
+    .content .describtion a i{
+        font-size: 40px;
+        padding:20px 20px;
+        margin: 10px;
+        border:1px solid chocolate;
+        border-radius:30%;
+    }
+    .content .describtion .btn{
+        margin-top: 15px;
+        font-size: 20px;
+        padding:10px 20px;
+    }
+}
+
